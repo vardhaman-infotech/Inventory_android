@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.allan.inventory.inventory_fragment"
+    android:paddingLeft="10sp"
+    android:paddingRight="10sp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/txtheading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Heading_Inventory"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10px"
+        android:layout_marginBottom="10sp"
+        android:textSize="20sp"/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/loinvoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.allan.inventory.inventory_fragment"
+        android:layout_below="@id/txtheading">
+        <TextView
+            android:id="@+id/txtinvoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invoice#"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:id="@+id/invoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Invoice Number"
+            android:layout_weight="1"
+           />
+        <Button
+            android:id="@+id/btnAdditem"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:text="Add Item"
+            android:layout_weight="1"
+            android:layout_marginLeft="10sp"/>
+    </LinearLayout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/loquality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.allan.inventory.inventory_fragment"
+        android:layout_below="@id/loinvoice"
+        >
+        <TextView
+            android:id="@+id/txtquality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quality"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            />
+
+        <Spinner android:id="@+id/quality"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/quality"
+            android:spinnerMode="dropdown"
+            android:singleLine="true" />
+
+    </LinearLayout>
+    <Button
+      android:id="@+id/btnShowitems"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/loquality"
+      android:text="Show Items">
+
+
+  </Button>
+</RelativeLayout>
+

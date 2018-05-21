@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Inventory</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Heading_Main">CQU Inventory System</string>
+    <string name="Heading_Inventory">Inventory Item</string>
+
+    <string-array name="quality">
+        <item> </item>
+        <item>FAILED</item>
+        <item>POOR</item>
+        <item>AVERAGE</item>
+        <item>GOOD</item>
+    </string-array>
+
+    <string name="location_permission_denied_str">Gps Permission is required to use this feature.</string>
+    <string name="try_Again">Try Again &#8230;</string>
+    <string name="error_try_Again">Try Again!</string>
+
+</resources>
